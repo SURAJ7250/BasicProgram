@@ -5,7 +5,7 @@ namespace BasicCoreProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Select program\n 1.flip coin\n 2.leap year\n 3.Power of 2\n 4.Odd And Even\n 5.Largest Number\n 6.Harmonic Numbers\n 7.Factors\n 8.QuotientRemainder\n 9.SwapNumber");
+            Console.WriteLine("Select program\n 1.flip coin\n 2.leap year\n 3.Power of 2\n 4.Odd And Even\n 5.Largest Number\n 6.Harmonic Numbers\n 7.Factors\n 8.QuotientRemainder\n 9.SwapNumber\n 10.VowelConsonant");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -45,6 +45,10 @@ namespace BasicCoreProgram
                 case 9:
                     SwapNumbers swapNumbers = new SwapNumbers();
                     swapNumbers.Swap();
+                    break;
+                case 10:
+                    VowelConsonant vowelConsonant = new VowelConsonant();
+                    vowelConsonant.Alphabet();
                     break;
                 default:
                     Console.WriteLine("Select correct option");
