@@ -5,7 +5,7 @@ namespace BasicCoreProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Select program\n 1.flip coin\n 2.leap year\n 3.Power of 2\n 4.Odd And Even\n 5.Largest Number");
+            Console.WriteLine("Select program\n 1.flip coin\n 2.leap year\n 3.Power of 2\n 4.Odd And Even\n 5.Largest Number\n 6.Harmonic Numbers");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -30,7 +30,12 @@ namespace BasicCoreProgram
                     LargestNum num = new LargestNum();
                     num.Read();
                     break;
+                case 6:
+                    HarmonicNumber harmonicNumber = new HarmonicNumber();
+                    harmonicNumber.Number();
+                    break;
                 default:
+                    Console.WriteLine("Select correct option");
                     break;
             }
         }
