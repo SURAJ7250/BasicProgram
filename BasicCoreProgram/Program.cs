@@ -5,7 +5,7 @@ namespace BasicCoreProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Select program\n 1.flip coin");
+            Console.WriteLine("Select program\n 1.flip coin\n 2.leap year");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -13,7 +13,10 @@ namespace BasicCoreProgram
                     FlipCoin flipCoin = new FlipCoin();
                     flipCoin.Coin();
                     break;
-                
+                case 2:
+                    LeapYear leapyear = new LeapYear();
+                    leapyear.Year();
+                    break;
             }
         }
     }
