@@ -5,7 +5,7 @@ namespace BasicCoreProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Select program\n 1.flip coin\n 2.leap year\n 3.Power of 2\n 4.Odd And Even\n 5.Largest Number\n 6.Harmonic Numbers\n 7.Factors");
+            Console.WriteLine("Select program\n 1.flip coin\n 2.leap year\n 3.Power of 2\n 4.Odd And Even\n 5.Largest Number\n 6.Harmonic Numbers\n 7.Factors\n 8.QuotientRemainder");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -37,6 +37,10 @@ namespace BasicCoreProgram
                 case 7:
                     Factors factors = new Factors();
                     factors.Fact();
+                    break;
+                case 8:
+                    QuotientRemainder quotientRemainder = new QuotientRemainder();
+                    quotientRemainder.QuoRem();
                     break;
                 default:
                     Console.WriteLine("Select correct option");
