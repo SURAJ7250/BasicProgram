@@ -5,7 +5,7 @@ namespace BasicCoreProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Select program\n 1.flip coin\n 2.leap year\n 3.Power of 2");
+            Console.WriteLine("Select program\n 1.flip coin\n 2.leap year\n 3.Power of 2\n 4.Odd And Even");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -21,6 +21,10 @@ namespace BasicCoreProgram
                     Console.WriteLine("3. Power Of 2 ");
                     PowerOfTwo power = new PowerOfTwo();
                     power.Read();
+                    break;
+                case 4:
+                    OddEven oddeve = new OddEven();
+                    oddeve.Read();
                     break;
                 default:
                     break;
