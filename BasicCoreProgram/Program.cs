@@ -5,7 +5,7 @@ namespace BasicCoreProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Select program\n 1.flip coin\n 2.leap year\n 3.Power of 2\n 4.Odd And Even");
+            Console.WriteLine("Select program\n 1.flip coin\n 2.leap year\n 3.Power of 2\n 4.Odd And Even\n 5.Largest Number");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -25,6 +25,10 @@ namespace BasicCoreProgram
                 case 4:
                     OddEven oddeve = new OddEven();
                     oddeve.Read();
+                    break;
+                case 5:
+                    LargestNum num = new LargestNum();
+                    num.Read();
                     break;
                 default:
                     break;
